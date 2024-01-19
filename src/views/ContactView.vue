@@ -31,12 +31,32 @@ export default {
 </script>
 
 <template>
+  <router-link to="/addcontact">+</router-link>
 	<div class="contact">
-		<router-link to="/addcontact">+</router-link>
 		<div v-for="(contact, index) in contacts" :key="index">
-			<p>Name: {{ contact.name }}</p>
-			<p>Number: {{ contact.number }}</p>
+			<p>{{ contact.name }}</p>
+			<p>{{ contact.number }}</p>
 			<div class="call" @click="() => makeCall(contact)">Appeler</div>
 		</div>
 	</div>
 </template>
+
+<style scoped>
+.contact {
+  padding: 8px;
+  border: 2px solid var(--color-border);
+  border-radius: 15px;
+}
+
+.call{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 2px solid var(--color-border);
+	border-radius: 15px;
+	background-color: #00bd7e;
+  color: white;
+	margin-top: 20px;
+	cursor: pointer;
+}
+</style>

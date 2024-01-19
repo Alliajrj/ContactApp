@@ -113,7 +113,31 @@ export default {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 100%;
+	border: 2px solid var(--color-border);
+	border-radius: 15px;
+	background-color: #00bd7e;
+  color: white;
 	margin-top: 20px;
+	cursor: pointer;
+}
+
+.chiffre {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 50px;
+	height: 50px;
+	border: 2px solid var(--color-border);
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+input {
+	width: 100%;
+	height: 50px;
+	border: 2px solid var(--color-border);
+	border-radius: 10px;
+	padding: 0 20px;
+	margin-bottom: 20px;
 }
 </style>

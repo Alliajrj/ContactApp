@@ -3,19 +3,19 @@ import { RouterLink, RouterView } from "vue-router";
 </script>
 
 <template>
-	<header>
 		<nav>
 			<RouterLink to="/">Clavier</RouterLink>
 			<RouterLink to="/contact">Contact</RouterLink>
       <RouterLink to="/journal">Journal</RouterLink>
 		</nav>
-	</header>
 
 	<RouterView />
 </template>
 
-<style scoped>
+<style>
+
 nav {
+  height: 30px;
 	width: 100%;
 	font-size: 12px;
 	text-align: center;
